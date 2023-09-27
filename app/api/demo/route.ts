@@ -1,10 +1,6 @@
 import { requestAuth } from "@/src/requestAuth";
 import { NextRequest, NextResponse } from "next/server";
 
-export const config = {
-    runtime: 'edge',
-  };
-  
 export async function GET(req: NextRequest, res: NextResponse) {
     return new NextResponse(JSON.stringify({ status: "online"}))
 }
